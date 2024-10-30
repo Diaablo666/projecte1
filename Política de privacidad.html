@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - P.J.Electrodomestics</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f9; /* Fondo claro y limpio */
+            color: #333;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+        h1, h2, h3 {
+            color: #00306ee0; /* Color rojo moderno para encabezados */
+        }
+        h1 {
+            border-bottom: 2px solid #00306ee0;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        p, ul {
+            line-height: 1.6;
+        }
+        .text-bold {
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 40px 0;
+        }
+        .text-muted {
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Política de Privacidad</h1>
+
+        <h2>1. Introducción</h2>
+        <p>En <span class="text-bold">P.J.Electrodomestics</span>, estamos comprometidos con la protección de la privacidad de nuestros clientes. Esta política explica cómo recopilamos, utilizamos y protegemos tu información personal.</p>
+
+        <h2>2. Recopilación de Datos</h2>
+        <p>Recopilamos información personal cuando realizas una compra, te registras en nuestro sitio web o te pones en contacto con nosotros. Los datos que podemos recopilar incluyen:</p>
+        <ul>
+            <li>Nombre</li>
+            <li>Dirección</li>
+            <li>Correo electrónico</li>
+            <li>Información de pago</li>
+        </ul>
+
+        <h2>3. Uso de los Datos</h2>
+        <p>Utilizamos tu información para:</p>
+        <ul>
+            <li>Procesar tus pedidos</li>
+            <li>Proporcionar atención al cliente</li>
+            <li>Enviarte información sobre productos y promociones</li>
+        </ul>
+
+        <h2>4. Derechos de los Usuarios</h2>
+        <p>Tienes derecho a solicitar acceso a tus datos personales, corregir inexactitudes o eliminar tu información. Para ejercer estos derechos, contáctanos a través de nuestro <span class="text-bold">correo electrónico de contacto</span>.</p>
+
+        <h2>5. Seguridad de los Datos</h2>
+        <p>Implementamos medidas de seguridad adecuadas para proteger tu información personal y evitar el acceso no autorizado.</p>
+
+        <h2>6. Cookies</h2>
+        <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Puedes gestionar las cookies a través de la configuración de tu navegador.</p>
+
+        <h2>7. Cambios en la Política</h2>
+        <p>Podemos actualizar esta política de privacidad ocasionalmente. Te notificaremos sobre cualquier cambio publicando la nueva política en esta página.</p>
+
+        <h2>8. Contacto</h2>
+        <p>Si tienes preguntas sobre nuestra política de privacidad, no dudes en contactarnos a través de nuestro <span class="text-bold">correo electrónico de contacto</span>.</p>
+
+        <hr>
+
+        <p class="text-muted">Última actualización: <span class="text-bold" id="fecha-actualizacion"></span></p>
+        
+        <script>
+            // Función para mostrar la fecha de hoy
+            function mostrarFecha() {
+                const fecha = new Date();
+                const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById('fecha-actualizacion').textContent = fecha.toLocaleDateString('es-ES', opciones);
+            }
+            window.onload = mostrarFecha;
+        </script>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos de Uso</title>
+    <style>
+        /* Reset de márgenes y paddings básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Encabezados principales */
+        h1 {
+            color: #007BFF;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Sección de encabezados secundarios */
+        h2 {
+            color: #0056b3;
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Texto y párrafos */
+        p {
+            font-size: 1em;
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        /* Fecha de actualización en estilo más tenue */
+        .date {
+            color: #666;
+            font-size: 0.9em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Enlaces */
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Términos de Uso</h1>
+        <p class="date" id="fecha-actualizacion">Última actualización: [Fecha]</p>
+
+        <h2>1. Aceptación de los Términos</h2>
+        <p>Al acceder y utilizar este sitio web, aceptas cumplir con estos términos de uso y todas las leyes aplicables.</p>
+
+        <h2>2. Uso del Sitio</h2>
+        <p>Este sitio web se proporciona únicamente para fines informativos. No puedes utilizar el contenido de este sitio para fines comerciales sin nuestro consentimiento previo.</p>
+
+        <h2>3. Propiedad Intelectual</h2>
+        <p>Todo el contenido, incluyendo texto, gráficos y logotipos, es propiedad de [Nombre de la Empresa] y está protegido por las leyes de derechos de autor.</p>
+
+        <h2>4. Limitación de Responsabilidad</h2>
+        <p>No seremos responsables por daños directos, indirectos, incidentales o consecuentes que resulten del uso o la incapacidad de usar este sitio.</p>
+
+        <h2>5. Modificaciones a los Términos</h2>
+        <p>Nos reservamos el derecho de modificar estos términos en cualquier momento. Te recomendamos revisar esta página periódicamente para estar al tanto de los cambios.</p>
+
+        <h2>6. Contacto</h2>
+        <p>Si tienes preguntas sobre estos términos, contáctanos a través de <a href="mailto:[pjelectrodomestics@gmail.com]">[pjelectrodomestics@gmail.com]</a>.</p>
+    </div>
+
+    <script>
+        // Función para mostrar la fecha de hoy
+        function mostrarFecha() {
+            const fecha = new Date();
+            const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('fecha-actualizacion').textContent = "Última actualización: " + fecha.toLocaleDateString('es-ES', opciones);
+        }
+        window.onload = mostrarFecha;
+    </script>
+</body>
+</html>
